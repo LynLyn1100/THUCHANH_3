@@ -1,0 +1,166 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+}
+
+.header_container {
+    height: fit-content;
+    margin: 25px 140px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    z-index: 2;
+}
+
+.logo {
+    position: inherit;
+    width: 0px;
+    height: 40px;
+    /* justify-self: flex-start; */
+    flex-grow: 10;
+    
+}
+
+.logo_img {
+    /* color: #910000; */
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.language {
+    flex-grow: 1;
+
+}
+
+.login_button {
+    flex-grow: 1;
+    cursor: pointer;
+
+}
+
+.container {
+    /* width: 1200px; */
+    /* width: 100%; */
+    margin: 60px 80px;
+    align-items: center;
+    justify-content: center;
+}
+.cover-tag{
+    /* content: ""; */
+    position: absolute;
+    bottom: -155px;
+    width: 1090px;
+    height: 100%;
+    background: linear-gradient(0deg, #263037d7 20%, transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
+.show-card{
+    cursor: pointer;
+}
+.show-card video {
+    /* margin-top: 100px; */
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0  ;
+    
+}
+.show-details{
+    margin-top: 400px;
+    position: absolute;
+    z-index: 2;
+}
+.show-details, .show-description{
+    margin-left: 30px;
+    width: 800px;
+}
+.show-details span, .show-description p{
+    font-size: 20px;
+}
+.list-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: row;
+    gap: 50px;
+}
+
+.movie-card {
+    cursor: pointer;
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.movie-card .poster {
+    position: relative;
+    overflow: hidden;
+}
+
+.poster::before  {
+    content: "";
+    position: absolute;
+    bottom: -180px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #263037d7 20%, transparent);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.movie-card:hover .poster::before {
+    bottom: 0px;
+}
+
+.movie-card .poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.movie-card .details {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    width: 100%;
+    bottom: -120px;
+    transition: 0.5s;
+    padding: 10px;
+    z-index: 999;
+    transition: 0.5s;
+}
+
+.movie-card:hover .details {
+    bottom: 0;
+}
+
+ .tags span {
+    cursor: pointer;
+    border-radius: 5px;
+    background: rgba(16, 16, 19, 0.377);
+    padding: 4px;
+    margin: 0 5px;
+}
+
+.tags span:nth-child(2) {
+    background: orange;
+}

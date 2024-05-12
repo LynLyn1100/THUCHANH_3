@@ -1,0 +1,161 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+  }
+  p{
+    font-size: 22px;
+  }
+.header_container {
+    height: fit-content;
+    margin: 25px 140px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    z-index: 2;
+}
+
+.logo {
+    position: inherit;
+    height: 40px;
+    flex-grow: 1;
+}
+
+.logo_img {
+    width: 100%;
+    height: 100%;
+}
+
+.language {
+    flex-grow: 1;
+}
+
+.login_button {
+    flex-grow: 1;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+  .background_img {
+    width: 100%;
+    height: 520px;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/9f46b569-aff7-4975-9b8e-3212e4637f16/b8cca226-95ea-4851-8459-3e8940c3654e/VN-vi-20240415-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+.section {
+    padding: 50px 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section h1 {
+    margin-bottom: 20px;
+}
+
+.section p {
+    margin-bottom: 20px;
+}
+
+.section_tv_platforms img,
+.section_download img,
+.section_platforms img,
+.section_kid img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.downloa_container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.download_img {
+    width: 60px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.text_container {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    margin-bottom: 5px;
+}
+
+.loading {
+    margin-bottom: 5px;
+    color: gray;
+}
+
+.section_question {
+    background-color: #f3f3f3;
+    padding-bottom: 50px;
+}
+
+.section_question #question_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_question button {
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.section_question button p {
+    margin: 0;
+}
+
+.section_question .section_email {
+    display: none;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.selections {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.selections p {
+    margin: 0;
+}
+
+.sel_1,
+.sel_2,
+.sel_3,
+.sel_4 {
+    flex-basis: 25%;
+}
+
+.extra_info {
+    margin-top: 20px;
+}
